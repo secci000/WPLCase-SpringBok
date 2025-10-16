@@ -1,0 +1,66 @@
+ul {
+    list-style: none;
+}
+
+.menu-wrapper {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 5.125rem;
+    background: #f5ebdc;
+    z-index: -2;
+}
+
+.menu-header {
+    background: #ff8732;
+}
+
+.menu-header .menu-header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+.menu-categories {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-categories-item {
+    scroll-snap-align: center;
+    margin-left: 2.1875rem;
+}
+
+.menu-categories-item a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Flame', sans-serif;
+    font-size: .9375rem;
+    line-height: 1.2;
+    color: #f5ebdc;
+    opacity: .5;
+    transition: .3s ease;
+    transition-property: opacity;
+}
+
+.icon-svg {
+    position: relative;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@font-face {
+  font-family: 'Flame';
+  src: url('./assets/fonts/Flame-Regular.woff') format('woff'),
+       url('./assets/fonts/Flame-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;   
+}
