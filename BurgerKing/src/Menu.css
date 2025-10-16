@@ -2,6 +2,14 @@ ul {
     list-style: none;
 }
 
+.menu-body {
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+}
+
 .menu-wrapper {
     flex: 1;
     position: relative;
