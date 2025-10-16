@@ -1,0 +1,47 @@
+.app-section-homepage{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d62300;
+  color: white;
+  padding: 80px 120px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.app-section-left-homepage{
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.bk-phone-homepage{
+  width: 250px;
+  z-index: 2;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
+}
+
+.app-section-right-homepage{
+  flex: 1;
+  max-width: 500px;
+}
+
+.app-section-right-homepage h1{
+  font-size: 45px;
+  line-height: 1.2;
+  font-family: "Cooper Black", sans-serif;
+  margin-bottom: 20px;
+}
+.bk-app-button-homepage{
+    background-color: rgb(106, 23, 23);;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.bk-app-button-homepage:hover{
+     transform: translateY(-3px);
+     background-color: #3c1f0e;
+}
