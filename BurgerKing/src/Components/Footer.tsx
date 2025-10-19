@@ -1,12 +1,12 @@
-import instagram from '../assets/footer/instagram.svg';
-import xCom from '../assets/footer/x-com.svg';
-import facebook from '../assets/footer/facebook.svg';
+import instagram from "../assets/footer/instagram.svg";
+import xCom from "../assets/footer/x-com.svg";
+import facebook from "../assets/footer/facebook.svg";
 const Footer = () => {
   return (
     <>
       {/* Footer */}
       <footer>
-        <section className='footer-top'>
+        <section className="footer-top">
           <article className="footer-title">
             <h1>
               <span className="rotator">
@@ -25,8 +25,8 @@ const Footer = () => {
 
         </section>
 
-        <section className='footer-bottom'>
-          <ul className='footer-bottom-info'>
+        <section className="footer-bottom">
+          <ul className="footer-bottom-info">
             <li><a href="#">Contacteer ons</a></li>
             <li><a href="#">Algemene gebruiksvoorwaarden</a></li>
             <li><a href="#">Privacy en cookies</a></li>
@@ -34,7 +34,7 @@ const Footer = () => {
             <li><a href="#">Cookie-Instellingen</a></li>
           </ul>
 
-          <ul className='footer-bottom-socials-language'>
+          <ul className="footer-bottom-socials-language">
             <li><a href="#"><img src={instagram} alt="instagram" /></a></li>
             <li><a href="#"><img src={xCom} alt="x" /></a></li>
             <li><a href="#"><img src={facebook} alt="facebook" /></a></li>

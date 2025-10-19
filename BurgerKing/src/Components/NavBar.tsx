@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import logoBK from '../assets/navBar/logo-bk.svg';
-import iconHamburgerMenu from '../assets/navBar/menu.svg';
+import logoBK from "../assets/navBar/logo-bk.svg";
+import iconHamburgerMenu from "../assets/navBar/menu.svg";
 
 const NavBar = () => {
   //Shrink navbar
@@ -21,17 +21,17 @@ const NavBar = () => {
         className="navbar-main"
         style={{ height: scrolled ? "3.5rem" : "5rem" }}
       >
-        <ul className='navbar'>
-          <li className='nav-hamburger'>
+        <ul className="navbar">
+          <li className="nav-hamburger">
             <img src={iconHamburgerMenu} alt="menu" />
           </li>
 
-          <li className='nav-pages'>
+          <li className="nav-pages">
             <a href="#">Menu</a>
             <a href="#">Deals</a>
             <a href="#">Restaurants</a>
             <a href="#">Jobs</a>
-            <a href="#" className='nav-myBK'>MyBurgerKing</a>
+            <a href="#" className="nav-myBK">MyBurgerKing</a>
           </li>
 
           <li className="dropdown">

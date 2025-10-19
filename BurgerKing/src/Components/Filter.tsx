@@ -1,10 +1,10 @@
-import burger from '../assets/menuFilter/burger.svg';
-import kid from '../assets/menuFilter/kid.svg';
-import salad from '../assets/menuFilter/salad.svg';
-import sauce from '../assets/menuFilter/sauce.svg';
-import dessert from '../assets/menuFilter/ice-cream-cone.svg';
-import fries from '../assets/menuFilter/fries.svg';
-import drink from '../assets/menuFilter/drink.svg'; 
+import burger from "../assets/menuFilter/burger.svg";
+import kid from "../assets/menuFilter/kid.svg";
+import salad from "../assets/menuFilter/salad.svg";
+import sauce from "../assets/menuFilter/sauce.svg";
+import dessert from "../assets/menuFilter/ice-cream-cone.svg";
+import fries from "../assets/menuFilter/fries.svg";
+import drink from "../assets/menuFilter/drink.svg"; 
 
 const Filter = () => {
     return (

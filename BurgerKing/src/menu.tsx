@@ -1,5 +1,5 @@
-import NavbarFooter from './navbarFooter'
-import Filter from './Components/Filter'
+import NavbarFooter from "./navbarFooter";
+import Filter from "./Components/Filter";
 const Menu = () => {
     return (
         <div>

@@ -1,7 +1,7 @@
 /* General */
 @font-face {
-    font-family: 'Flame';
-    src: url('./assets/fonts/Flame-Regular.woff') format('woff');
+    font-family: "Flame";
+    src: url("./assets/fonts/Flame-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -18,7 +18,7 @@
 main {
     min-height: 100vh;
     background-color: #F5EBDC;
-    font-family: 'Flame', sans-serif;
+    font-family: "Flame", sans-serif;
 }
 
 /* Navbar pages */
