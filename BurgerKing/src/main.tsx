@@ -5,5 +5,5 @@ import Menu from "./menu.tsx";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Menu />
-  </StrictMode>,
+  </StrictMode>
 );
