@@ -100,12 +100,12 @@ main {
 
 .nav-pages a:hover,
 .dropbtn:hover {
-    color: red;
+    color: #E50000;
 }
 
 .nav-myBK,
 .footer-signin-mailbox * {
-    background-color: red;
+    background-color: #E50000;
     border-radius: 40px;
     padding: 10px 18px;
 }
@@ -174,7 +174,7 @@ footer {
 }
 
 footer a {
-    color: white;
+    color: #F5EBDC;
 }
 
 footer,
@@ -215,6 +215,7 @@ footer *:hover {
     font-size: 2.5rem;
     overflow: hidden;
     height: 3rem;
+    margin-bottom: 1em;
 }
 
 /* Rotating words */
@@ -291,6 +292,7 @@ footer *:hover {
 }
 
 .static-text {
+    color: #F5EBDC;
     display: inline-block;
     margin-left: 0.5rem;
 }
@@ -331,13 +333,11 @@ footer *:hover {
 .footer-bottom li>a:hover {
     text-decoration: underline;
 }
-
 .footer-bottom-socials-language .footer-dropdown {
-    padding: 1em 0;
+    padding: 2em 0;
     position: relative;
     display: inline-block;
 }
-
 .footer-dropbtn {
     color: white;
     transition: 0.3s;
@@ -370,5 +370,5 @@ footer *:hover {
 }
 
 .footer-dropbtn:hover {
-    color: red;
+    color: #E50000;
 }

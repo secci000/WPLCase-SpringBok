@@ -21,7 +21,9 @@ const Footer = () => {
               <span className="static-text"> in je mailbox</span>
             </h1>
           </article>
-
+          <article className="footer-signin-mailbox">
+            <a href="#">Schrijf je in voor de nieuwsbrief</a>
+          </article>
 
         </section>
 

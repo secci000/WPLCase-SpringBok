@@ -6,7 +6,6 @@ const Menu = () => {
             <NavbarFooter>
                 <section>
                     <Filter/>
-                    <h1>Welkom op de homepagina</h1>
                 </section>
             </NavbarFooter>
         </div>
