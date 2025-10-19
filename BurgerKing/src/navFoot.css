@@ -88,10 +88,16 @@ main {
     border-radius: 20px;
 }
 
+.dropdown-content a:hover, .footer-dropbtn:hover, .footer-dropdown-content a:hover {
+    color: #E50000;
+}
+
 .dropdown-content a {
     color: #502212;
     padding: 12px 18px;
     display: block;
+    transition: 0.3s;
+
 }
 
 .dropdown:hover .dropdown-content {
@@ -330,14 +336,16 @@ footer *:hover {
     transform: scale(1.125);
 }
 
-.footer-bottom li>a:hover {
+.footer-bottom-info li>a:hover {
     text-decoration: underline;
 }
+
 .footer-bottom-socials-language .footer-dropdown {
     padding: 2em 0;
     position: relative;
     display: inline-block;
 }
+
 .footer-dropbtn {
     color: white;
     transition: 0.3s;
@@ -363,12 +371,10 @@ footer *:hover {
     color: white;
     padding: 12px 18px;
     display: block;
+    transition: 0.3s;
+
 }
 
 .footer-dropdown:hover .footer-dropdown-content {
     display: block;
-}
-
-.footer-dropbtn:hover {
-    color: #E50000;
 }
