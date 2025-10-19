@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import logoBK from '../assets/navBar/logo-bk.svg';
 import iconHamburgerMenu from '../assets/navBar/menu.svg';
 
