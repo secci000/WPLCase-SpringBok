@@ -23,7 +23,7 @@ const NavBar = () => {
       >
         <ul className="navbar">
           <li className="nav-hamburger">
-            <img src={iconHamburgerMenu} alt="menu" />
+            <a><img src={iconHamburgerMenu} alt="menu" /></a>
           </li>
 
           <li className="nav-pages">
@@ -45,12 +45,14 @@ const NavBar = () => {
 
         {/* Logo */}
         <div className="nav-logo">
-          <img
-            src={logoBK}
-            alt="logo"
-            className="logoBK"
-            style={{ height: scrolled ? "55px" : "70px" }}
-          />
+          <a href="#">
+            <img
+              src={logoBK}
+              alt="logo"
+              className="logoBK"
+              style={{ height: scrolled ? "55px" : "70px" }}
+            />
+          </a>
         </div>
       </nav>
     </>

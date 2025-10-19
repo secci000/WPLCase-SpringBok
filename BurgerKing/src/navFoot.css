@@ -46,7 +46,6 @@ main {
     list-style-type: none;
     margin: 5rem;
 }
-
 .nav-hamburger img {
     width: 40px;
     cursor: pointer;
@@ -88,7 +87,9 @@ main {
     border-radius: 20px;
 }
 
-.dropdown-content a:hover, .footer-dropbtn:hover, .footer-dropdown-content a:hover {
+.dropdown-content a:hover,
+.footer-dropbtn:hover,
+.footer-dropdown-content a:hover {
     color: #E50000;
 }
 
@@ -109,7 +110,8 @@ main {
     color: #E50000;
 }
 
-.footer-signin-mailbox, .nav-myBK{
+.footer-signin-mailbox,
+.nav-myBK {
     transition: 0.3s;
 }
 
@@ -119,9 +121,12 @@ main {
     border-radius: 40px;
     padding: 10px 18px;
 }
-.footer-signin-mailbox:hover, .nav-myBK:hover{
+
+.footer-signin-mailbox:hover,
+.nav-myBK:hover {
     opacity: 0.7;
 }
+
 a.nav-myBK {
     color: white;
 }
@@ -136,6 +141,17 @@ a.nav-myBK:hover {
     transform: translate(-50%);
     bottom: -0.75rem;
     padding: 0px;
+}
+
+.nav-logo a, .nav-hamburger a{
+    transition: 0.3s;
+
+}
+.nav-hamburger a:hover{
+    opacity: 0.6;
+}
+.nav-logo a:hover {
+    opacity: 0.8;
 }
 
 .nav-logo img {
