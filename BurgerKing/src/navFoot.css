@@ -82,7 +82,6 @@ main {
     background-color: #F5EBDC;
     min-width: inherit;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-    z-index: 20;
     margin: 1em;
     border-radius: 20px;
 }
@@ -163,12 +162,11 @@ a.nav-myBK:hover {
 
 /* Nav filter */
 .navbar-sub {
-
     background-color: #FF8732;
     height: 5rem;
     display: flex;
-    justify-content: left;
     align-items: center;
+    width: 100%;
 }
 
 .navbar-sub img {
@@ -180,10 +178,11 @@ a.nav-myBK:hover {
     list-style: none;
     display: flex;
     gap: 2rem;
-    margin: 5rem;
 }
-
-.navbar-sub a {
+.filter-menu{
+     margin: 0 37rem 0 5rem;
+}
+.filter-menu a {
     display: flex;
     color: #fff7ec;
     transition: 0.3s;
@@ -191,8 +190,17 @@ a.nav-myBK:hover {
     opacity: 0.6;
     padding: 1rem 0 1rem 0;
 }
-
-.navbar-sub *:hover {
+.filter-allergens a{
+    display: flex;
+    color: #fff7ec;
+    transition: 0.3s;
+    padding: 2rem 4rem;
+}
+.filter-allergens a:hover{
+     background-color: white;
+     color: #502212;
+}
+.filter-menu a:hover {
     opacity: 1;
 }
 

@@ -11,7 +11,7 @@ const Filter = () => {
         <>
             {/* Filter */}
             <nav className="navbar-sub">
-                <ul>
+                <ul className="filter-menu">
                     <li><a href="#">Alles</a></li>
                     <li><a href="#"><img src={burger} alt="burger" /> Burgers</a></li>
                     <li><a href="#"><img src={salad} alt="salad" />Salades</a></li>
@@ -20,6 +20,9 @@ const Filter = () => {
                     <li><a href="#"><img src={fries} alt="fries" />Sides & Snacks</a></li>
                     <li><a href="#"><img src={sauce} alt="sauce" />Sauzen</a></li>
                     <li><a href="#"><img src={kid} alt="kid" />Kids</a></li>
+                </ul>
+                <ul className="filter-allergens">
+                    <li><a href="#">Allergens</a></li>
                 </ul>
             </nav>
         </>
