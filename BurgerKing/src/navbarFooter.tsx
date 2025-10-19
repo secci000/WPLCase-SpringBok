@@ -7,7 +7,7 @@ const NavbarFooter = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <NavBar />
-      <main>{children}</main> {/* content van de pagina */}
+      <main>{children}</main>
       <Footer />
     </>
   );
