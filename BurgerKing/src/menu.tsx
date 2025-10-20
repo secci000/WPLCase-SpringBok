@@ -1,14 +1,11 @@
-import NavbarFooter from "./navbarFooter";
+//import NavbarFooter from "./navbarFooter";
 import Filter from "./Components/Filter";
 const Menu = () => {
     return (
         <div>
-            <NavbarFooter>
-                <section>
-                    <Filter/>
-                </section>
-            </NavbarFooter>
-        </div>
+            <section>
+                <Filter />
+            </section>        </div>
     );
 };
 

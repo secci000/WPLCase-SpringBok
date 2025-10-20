@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import logoBK from "../assets/navBar/logo-bk.svg";
 import iconHamburgerMenu from "../assets/navBar/menu.svg";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   //Shrink navbar
@@ -27,10 +28,11 @@ const NavBar = () => {
           </li>
 
           <li className="nav-pages">
-            <a href="#">Menu</a>
+            <NavLink to="/menu">Menu</NavLink>
             <a href="#">Deals</a>
             <a href="#">Restaurants</a>
             <a href="#">Jobs</a>
+            <NavLink to="/" className="nav-myBK">MyBurgerKing</NavLink>
             <a href="#" className="nav-myBK">MyBurgerKing</a>
           </li>
 
