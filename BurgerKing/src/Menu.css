@@ -1,74 +1,115 @@
-ul {
-    list-style: none;
-}
-
-.menu-body {
-    flex-grow: 1;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    z-index: -1;
-}
-
-.menu-wrapper {
-    flex: 1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding-top: 5.125rem;
-    background: #f5ebdc;
-    z-index: -2;
-}
-
-.menu-header {
-    background: #ff8732;
-}
-
-.menu-header .menu-header-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 5rem;
-}
-
-.menu-categories {
-    padding: 1.25rem;
-    display: flex;
-    flex-direction: row;
-}
-
-.menu-categories-item {
-    scroll-snap-align: center;
-    margin-left: 2.1875rem;
-}
-
-.menu-categories-item a {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    font-family: 'Flame', sans-serif;
-    font-size: .9375rem;
-    line-height: 1.2;
-    color: #f5ebdc;
-    opacity: .5;
-    transition: .3s ease;
-    transition-property: opacity;
-}
-
-.icon-svg {
-    position: relative;
-    display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
+/* General */
 @font-face {
-  font-family: 'Flame';
-  src: url('./assets/fonts/Flame-Regular.woff') format('woff'),
-       url('./assets/fonts/Flame-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;   
+    font-family: "Flame";
+    src: url("./assets/fonts/Flame-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+#root {
+    width: 100%;
+    font-family: FlameSans, Helvetica, Arial, sans-serif;
+}
+
+#root * {
+    font-weight: 600;
+}
+
+main {
+    min-height: 100vh;
+    background-color: #F5EBDC;
+    font-family: "Flame", sans-serif;
+}
+
+.navbar-sub {
+    background-color: #FF8732;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-sub img {
+    width: 1.125rem;
+    margin-right: 0.25em;
+}
+
+.navbar-sub ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.filter-menu{
+     margin: 0 37rem 0 5rem;
+}
+.filter-menu a {
+    display: flex;
+    color: #fff7ec;
+    transition: 0.3s;
+    align-items: center;
+    opacity: 0.6;
+    padding: 1rem 0 1rem 0;
+}
+.filter-allergens a{
+    display: flex;
+    color: #fff7ec;
+    transition: 0.3s;
+    padding: 2rem 4rem;
+}
+.filter-allergens a:hover{
+     background-color: white;
+     color: #502212;
+}
+.filter-menu a:hover {
+    opacity: 1;
+}
+
+.menu-section {
+  padding: 2rem;
+}
+
+.menu-category {
+  margin-bottom: 3rem;
+}
+
+.menu-category-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.menu-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 220px;
+  transition: transform 0.2s ease;
+}
+
+.menu-card:hover {
+  transform: scale(1.03);
+}
+
+.menu-item-image {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  background-color: #fafafa;
+}
+
+.menu-card-content {
+  padding: 1rem;
+}
+
+.menu-item-name {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
 }
