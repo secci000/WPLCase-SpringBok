@@ -21,7 +21,7 @@ import CrispyChickenSalad from "./assets/BK-Uploads/CRISPY_CHICKEN_SALAD_bbdea99
 import SideSalad from "./assets/BK-Uploads/SIDE_SALAD_94f7a5138b.png"
 import KingFusionVanilla from "./assets/BK-Uploads/KING_FUSION_VANILLA_414aebb0c0.png"
 import KingFusionOreo from "./assets/BK-Uploads/BK_FUSION_OREO_1c1cb86611.png"
-import KingFusionSpeculoos from "./assets/BK-Uploads/large_BK_FUSION_NUTELLA_EN_a1b8e0d4f0.png"
+import KingFusionSpeculoos from "./assets/BK-Uploads/large_BK_FUSION_NUTELLA_EN_a1b8e0d4f0.png"    
 import KingFusionDaim from "./assets/BK-Uploads/BK_FUSION_M_and_M_S_4867e94c8d.png"
 import SundaeChocolate from "./assets/BK-Uploads/SUNDAE_CHOCOLATE_ec80cd7a3e.png"
 import SundaeCaramel from "./assets/BK-Uploads/SUNDAE_CARAMEL_df58b506a0.png"
@@ -598,7 +598,7 @@ const menuData = {
       ]
     },
     {
-      "item": "Kids Menu",
+      name: "Kids Menu",
       "items": [
         {
           id: "kids-001",
