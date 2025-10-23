@@ -1,5 +1,6 @@
-import "./AppSectionHome.css"
-import AppFoto from "./assets/burgerKing-app.png";
+import "../AppSectionHome.css"
+import AppFoto from "../assets/burgerKing-app.png";
+import QrCode from "../assets/Qr-Code-App.png"
 function AppSectionHome(){
     return(
         <section className="app-section-homepage">
@@ -14,7 +15,7 @@ function AppSectionHome(){
             </p>
             <button className="bk-app-button-homepage">Download!</button>
         </div>
-        <img src="https://burgerking.be/_nuxt/img/app-download-qr-code.972c9d8.png" alt="Qr Code" className="qr-code-homepage" />
+        <img src={QrCode} alt="Qr Code" className="qr-code-homepage" />
         </section>
     );
 }
