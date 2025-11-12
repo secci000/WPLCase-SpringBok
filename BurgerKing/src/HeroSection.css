@@ -1,0 +1,165 @@
+/* ========== HERO SECTION BASIS ========== */
+.hero-section-HeroSectie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(#fff4e0, #fbe9d0);
+  text-align: center;
+  color: #4b1c04;
+  font-family: "Flame Sans", "Helvetica Neue", Arial, sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ========== HERO TEXT ========== */
+.hero-text-HeroSectie {
+  position: relative;
+  z-index: 5; /* tekst boven decoratieve images */
+}
+
+.hero-text-HeroSectie h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  color: #4b1c04;
+}
+
+/* ========== GRILL CIRKEL ========== */
+.grill-circle-container-HeroSectie {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.grill-circle-container-HeroSectie:hover {
+  transform: scale(1.05);
+}
+
+/* ronde vorm + zwarte rand + conic gradient */
+.grill-circle-HeroSectie {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: conic-gradient(#fbe9d0 0deg, #fbe9d0 360deg);
+  transition: background 0.3s linear;
+  overflow: hidden;
+}
+
+/* Burgericoon binnenin */
+.burger-icon-HeroSectie {
+  font-size: 48px;
+  color: #c63c1c; /* BK donkerrood */
+  stroke: #111;
+  stroke-width: 10;
+  filter: drop-shadow(0 1px 0 #111);
+  transition: all 0.4s ease;
+}
+
+.burger-icon-HeroSectie.grilling {
+  color: #f2a900; /* goudgeel bij grillen */
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 8px rgba(226, 88, 34, 0.6));
+  animation: sizzleHeroSectie 0.8s infinite alternate;
+}
+
+@keyframes sizzleHeroSectie {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* ========== TEKST EN CTA ========== */
+.grill-text-HeroSectie {
+  font-size: 1.2rem;
+  color: #6b3b1f;
+  margin-top: 1.5rem;
+}
+
+.discover-btn-HeroSectie {
+  background-color: #e74c1b;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+}
+
+.discover-btn-HeroSectie:hover {
+  background-color: #c93f16;
+  transform: scale(1.05);
+}
+
+/* ========== DECORATIEVE IMAGES (bun + patty) ========== */
+.hero-bun-HeroSectie {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 320px;
+  transform: translate(-40px, 0) rotate(-5deg);
+  z-index: 1;
+  object-fit: contain;
+  opacity: 0;
+  animation: fadeInHeroSectie 1.4s ease forwards;
+  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+.hero-patty-HeroSectie {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 380px;
+  transform: translate(40px, 20px) rotate(5deg);
+  z-index: 1;
+  object-fit: contain;
+  opacity: 0;
+  animation: fadeInHeroSectie 1.4s ease forwards 0.2s;
+  filter: drop-shadow(-10px 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+/* subtiele fade-in animatie */
+@keyframes fadeInHeroSectie {
+  to {
+    opacity: 1;
+  }
+}
+
+/* ========== RESPONSIEF ========== */
+@media (max-width: 900px) {
+  .hero-section-HeroSectie {
+    height: auto;
+    padding: 4rem 1rem;
+  }
+
+  .hero-text-HeroSectie h1 {
+    font-size: 2.5rem;
+  }
+
+  .grill-circle-container-HeroSectie {
+    width: 120px;
+    height: 120px;
+  }
+
+  .burger-icon-HeroSectie {
+    font-size: 40px;
+  }
+
+  .hero-bun-HeroSectie,
+  .hero-patty-HeroSectie {
+    display: none;
+  }
+}
+

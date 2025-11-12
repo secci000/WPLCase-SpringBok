@@ -4,7 +4,7 @@
   justify-content: space-between;
   background-color: #d62300;
   color: white;
-  padding: 80px 120px;
+  padding: 80px 100px;
   flex-wrap: wrap;
   position: relative;
 }
@@ -23,7 +23,7 @@
 }
 
 .app-section-right-homepage{
-  flex: 1;
+
   max-width: 500px;
 }
 
@@ -32,16 +32,30 @@
   line-height: 1.2;
   font-family: "Cooper Black", sans-serif;
   margin-bottom: 20px;
+  padding-right: 20px;
 }
 .bk-app-button-homepage{
     background-color: rgb(106, 23, 23);;
     border-radius: 25px;
     border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
     color: white;
     font-weight: bold;
     font-size: 16px;
 }
 .bk-app-button-homepage:hover{
-     transform: translateY(-3px);
      background-color: #3c1f0e;
+}
+
+.qr-code-homepage{
+  position: relative;
+  bottom: 30px;
+  right: 40px;
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
