@@ -8,6 +8,7 @@ import fries from '../assets/menuFilter/fries.svg'
 import sauce from '../assets/menuFilter/sauce.svg'
 import kid from '../assets/menuFilter/kid.svg'
 import React, { useState } from "react"
+import { useNavigate } from "react-router-dom"
 type MenuItem = {
     id: string;
     name: string;
@@ -15,7 +16,7 @@ type MenuItem = {
     description_nl: string;
     description_fr: string;
     price: number;
-    allergens: null;
+    allergens: [];
     image: string;
 }
 
@@ -28,15 +29,18 @@ type MenuType = {
     menuItems: MenuCategory[];
 }
 
+
+
 const Menu: React.FC = () => {
     const data = menuData as MenuType;
     const [selectedFilter, setSelectedFilter] = useState<string>("Alles")
+    const navigate = useNavigate();
 
     const filteredMenu = selectedFilter === "Alles" ? data.menuItems : data.menuItems.filter((category) => category.name === selectedFilter)
     return (
         <>
-            {/* Filter */}
             <main>
+                {/* Filter */}
                 <nav className="navbar-sub">
                     <ul className="filter-menu">
                         <li><a href="#" onClick={() => setSelectedFilter("Alles")} className={selectedFilter === "Alles" ? "active" : ""}>Alles</a></li>
@@ -49,7 +53,7 @@ const Menu: React.FC = () => {
                         <li><a href="#" onClick={() => setSelectedFilter("Kids Menu")} className={selectedFilter === "Kids Menu" ? "active" : ""}><img src={kid} alt="kid" />Kids</a></li>
                     </ul>
                     <ul className="filter-allergens">
-                        <li><a href="#">Allergens</a></li>
+                        <li><a href="#">Allergenen</a></li>
                     </ul>
                 </nav>
                 {/* Menu Items */}
@@ -59,7 +63,11 @@ const Menu: React.FC = () => {
                             <h2 className="menu-category-title">{category.name}</h2>
                             <div className="menu-grid">
                                 {category.items.map((item) => (
-                                    <div key={item.id} className="menu-card">
+                                    <div 
+                                        key={item.id} 
+                                        className="menu-card"
+                                        onClick={() => navigate(`/menu/${item.id}`)}
+                                        style={{cursor:'pointer'}}>
                                         {item.image && (
                                             <img
                                                 src={item.image}
