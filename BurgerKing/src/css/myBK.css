@@ -1,10 +1,10 @@
-h1,
 p {
     color: #502212;
     font-size: 0.8rem;
 }
 
-h1 {
+.article-text-wrapper h1 {
+    color: #502212;
     text-align: left;
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
@@ -12,6 +12,8 @@ h1 {
 
 /*Section download app*/
 .section-download-app {
+    position: relative;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -60,4 +62,24 @@ h1 {
     padding: 1rem;
     background-color: #fff9ef;
     border-radius: .625rem;
+}
+
+/*Section kingdom*/
+.section-kingdom-wrapper {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    background: #d62300;
+}
+
+.section-kingdom-wrapper-content {
+    position: relative;
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 4.75rem 7.875rem;
+    background: #ca2100;
+    border-radius: 1.25rem;
+}
+.section-kingdom-wrapper-content img{
+    height: auto;
+    max-width: 100%;
 }

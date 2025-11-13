@@ -2,6 +2,7 @@
 import kingdomPhone from "./assets/myBK/kingdom-phone.webp";
 import appQR from "./assets/myBK/app-qr-code.webp";
 import arrow from "./assets/myBK/arrow.webp";
+import kingdomMechanism from "./assets/myBK/kingdom-mechanism.png"
 import "./css/myBK.css"
 const MyBK = () => {
     return (
@@ -19,6 +20,11 @@ const MyBK = () => {
                         <h1>Download de app nu</h1>
                         <p>Download de My Burger King app, spaar BK Coins, geniet en waan je in het koninkrijk der burgers.</p>
                     </article>
+                </section>
+            </section>
+            <section className="section-kingdom-wrapper">
+                <section className="section-kingdom-wrapper-content">
+                    <img src={kingdomMechanism} alt="kingdomMechanism" />
                 </section>
             </section>
         </div>

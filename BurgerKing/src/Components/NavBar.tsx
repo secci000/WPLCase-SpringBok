@@ -33,7 +33,6 @@ const NavBar = () => {
             <a href="#">Restaurants</a>
             <a href="#">Jobs</a>
             <NavLink to="/" className="nav-myBK">MyBurgerKing</NavLink>
-            <a href="#" className="nav-myBK">MyBurgerKing</a>
           </li>
 
           <li className="dropdown">
