@@ -23,7 +23,7 @@ const MenuItemDetail: React.FC = () => {
                     <div className="detail-info">
                         <h1>{item.name}</h1>
                         <p>{item.description_nl}</p>
-                        {item.allergens && <p><strong>Allergens:</strong> {item.allergens}</p>}
+                        {item.allergens && <p><strong>Allergenen:</strong> {item.allergens + " "}</p>}
                     </div>
                 </div>
             </div>

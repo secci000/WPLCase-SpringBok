@@ -114,3 +114,61 @@ main {
   margin-bottom: 0.3rem;
 }
 
+.filter-allergens {
+  position: relative;
+  margin: 0;
+  overflow: visible;
+}
+
+.allergens-toggle {
+  background: transparent;
+  border: none;
+  color: #fff7ec;
+  font-weight: 600;
+  padding: 1rem 0.5rem;
+  cursor: pointer;
+  opacity: 0.95;
+  font-family: inherit;
+}
+
+.allergen-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  background-color: #FF8732;
+  padding: 0.5rem;                 
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  z-index: 1100;                   
+  min-width: 10.5rem;
+  max-width: calc(100vw - 2rem);   
+  max-height: 60vh;               
+  overflow: auto;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  pointer-events: auto;            
+}
+.allergen-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 247, 236, 0.35);
+  color: #fff7ec;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.allergen-btn:hover,
+.allergen-btn.active {
+  background: #fff7ec;
+  color: #502212;
+  border-color: rgba(0,0,0,0.08);
+}
+
+.filter-allergens a,
+.filter-allergens .nav-link {
+  padding: 1rem 0.5rem; 
+}

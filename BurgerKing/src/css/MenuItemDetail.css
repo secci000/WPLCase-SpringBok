@@ -27,17 +27,15 @@
   background-color: #e86f1d;
 }
 
-/* Full-width brown background */
 .detail-background {
-  width: 100vw;                 /* full screen width */
-  background-color: #6b3e1e;    /* rich brown */
+  width: 100vw;                 
+  background-color: #6b3e1e;    
   display: flex;
-  justify-content: center;      /* center inner content horizontally */
+  justify-content: center;      
   padding: 4rem 2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
-/* Inner container that keeps content centered */
 .detail-content {
   display: flex;
   align-items: center;
