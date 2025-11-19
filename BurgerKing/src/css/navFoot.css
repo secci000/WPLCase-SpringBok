@@ -213,13 +213,17 @@ footer a {
     color: #F5EBDC;
 }
 
-footer,
+footer {
+    background-color: #502212;
+}
+
 .footer-bottom-info,
 .footer-bottom-socials-language {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 footer *:hover {
     color: #f5ebdc;
