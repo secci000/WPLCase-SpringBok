@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import MyBK from "./myBK";
 import Menu from "./menu";
 import NavbarFooter from "./navbarFooter";
-
+import RestaurantPage from "./RestaurantPage";
 // Root-layout: nav + footer staan hier, inhoud via <Outlet/>
 const RootLayout = () => {
   return (
@@ -19,6 +19,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <MyBK /> },
       { path: "/menu", element: <Menu /> },
+      { path: "/restaurant", element: <RestaurantPage/>},
     ],
   },
 ]);

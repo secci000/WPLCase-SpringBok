@@ -7,10 +7,10 @@ import "leaflet/dist/leaflet.css";
 import "./leafletFix";
 import App from "./App";
 
-createRoot(document.getElementById("root") as HTMLElement).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    {/*<Menu />*/}
+    {/*<MyBK/>*/}
+    <App/>
   </StrictMode>
 );
