@@ -31,7 +31,7 @@ const NavBar = () => {
             <NavLink to="/menu">Menu</NavLink>
             <a href="#">Deals</a>
             <NavLink to="/restaurant">Restaurants</NavLink>
-            <a href="#">Jobs</a>
+            <a href="https://jobs.burgerking.be/nl" target="_blank">Jobs</a>
             <NavLink to="/myBK" className="nav-myBK">MyBurgerKing</NavLink>
           </li>
 
