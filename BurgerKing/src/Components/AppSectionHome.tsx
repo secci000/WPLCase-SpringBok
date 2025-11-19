@@ -1,4 +1,4 @@
-import "../AppSectionHome.css"
+import "../css/AppSectionHome.css"
 import AppFoto from "../assets/home/burgerKing-app.png";
 import QrCode from "../assets/home/Qr-Code-App.png"
 function AppSectionHome(){

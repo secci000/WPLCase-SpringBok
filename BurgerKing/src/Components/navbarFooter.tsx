@@ -1,6 +1,7 @@
+import "../css/reset.css"
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import "../NavFoot.css";
+import "../css/navFoot.css";
 
 const NavbarFooter = ({ children }: { children: React.ReactNode }) => {
   return (

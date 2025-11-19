@@ -1,8 +1,9 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import MyBK from "./myBK";
-import Menu from "./menu";
-import NavbarFooter from "./navbarFooter";
+import Menu from "./Components/Menu.tsx";
+import NavbarFooter from "./Components/navbarFooter";
 import RestaurantPage from "./RestaurantPage";
+import HomePage from "./Components/HomePage.tsx";
 // Root-layout: nav + footer staan hier, inhoud via <Outlet/>
 const RootLayout = () => {
   return (
@@ -17,9 +18,11 @@ const router = createBrowserRouter([
     path: "/",
     element: <RootLayout />,
     children: [
-      { path: "/", element: <MyBK /> },
+      { path: "/", element: <HomePage /> },
       { path: "/menu", element: <Menu /> },
-      { path: "/restaurant", element: <RestaurantPage/>},
+      { path: "/restaurant", element: <RestaurantPage /> },
+      { path: "/myBK", element: <MyBK /> },
+
     ],
   },
 ]);

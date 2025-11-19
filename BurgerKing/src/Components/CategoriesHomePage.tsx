@@ -1,6 +1,6 @@
 import { LuLeafyGreen } from "react-icons/lu";
 import { FaHamburger } from "react-icons/fa";
-import "../CategoriesHomePage.css"
+import "../css/CategoriesHomePage.css"
 import friesImg from "../assets/home/fries.png"
 import lettuceImg from "../assets/home/lettuce.png"
 const HomeCategory = () => {

@@ -24,15 +24,15 @@ const NavBar = () => {
       >
         <ul className="navbar">
           <li className="nav-hamburger">
-            <a><img src={iconHamburgerMenu} alt="menu" /></a>
+            <a><img src={iconHamburgerMenu} alt="menu" />
+            </a>
           </li>
-
           <li className="nav-pages">
             <NavLink to="/menu">Menu</NavLink>
             <a href="#">Deals</a>
             <NavLink to="/restaurant">Restaurants</NavLink>
             <a href="#">Jobs</a>
-            <NavLink to="/" className="nav-myBK">MyBurgerKing</NavLink>
+            <NavLink to="/myBK" className="nav-myBK">MyBurgerKing</NavLink>
           </li>
 
           <li className="dropdown">
@@ -46,14 +46,14 @@ const NavBar = () => {
 
         {/* Logo */}
         <div className="nav-logo">
-          <a href="#">
+          <NavLink to="/">
             <img
               src={logoBK}
               alt="logo"
               className="logoBK"
               style={{ height: scrolled ? "55px" : "70px" }}
             />
-          </a>
+          </NavLink>
         </div>
       </nav>
     </>

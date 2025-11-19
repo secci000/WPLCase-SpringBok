@@ -1,18 +1,15 @@
 /* General */
 @font-face {
-    font-family: "Flame";
-    src: url("./assets/fonts/Flame-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Flame";
+  src: url("/src/assets/fonts/Flame-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
+
 
 #root {
     width: 100%;
     font-family: FlameSans, Helvetica, Arial, sans-serif;
-}
-
-#root * {
-    font-weight: 600;
 }
 
 main {

@@ -1,4 +1,4 @@
-import "../Homepage.css";
+import "../css/Homepage.css";
 import AppSectionHome from "./AppSectionHome";
 import Logo from "../assets/logo-bk.svg";
 import NavbarFooter from "./navbarFooter";
@@ -28,12 +28,10 @@ function HomePage() {
           <span className="arrow-homepage">&#8250;</span>
         </a>
       </div>
-      <NavbarFooter>
         <CarouselHomePage />
         <GrillSection />
         <AppSectionHome />
         <HomeCategory />
-      </NavbarFooter>
     </>
   );
 }

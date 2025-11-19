@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import "../GrillSection.css";
+import "../css/GrillSection.css";
 import bunImg from "../assets/home/bun.png";
 import pattyImg from "../assets/home/patty.png";
 import { GiHamburger } from "react-icons/gi";
