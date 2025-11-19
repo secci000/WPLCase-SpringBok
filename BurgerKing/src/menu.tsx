@@ -5,7 +5,8 @@ const Menu = () => {
         <div>
             <section>
                 <Filter />
-            </section>        </div>
+            </section>
+        </div>
     );
 };
 
