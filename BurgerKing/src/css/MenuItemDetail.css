@@ -1,0 +1,122 @@
+/* Detail Page Layout */
+.menu-item-detail {
+  min-height: 100vh;
+  background-color: #F5EBDC;
+  font-family: "Flame", sans-serif;
+  color: #502212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Back Button */
+.back-button {
+  background-color: #FF8732;
+  color: #fff7ec;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+  align-self: flex-start;
+  margin: 2rem 0 1.5rem 5rem;
+}
+
+.back-button:hover {
+  background-color: #e86f1d;
+}
+
+.detail-background {
+  width: 100vw;                 
+  background-color: #6b3e1e;    
+  display: flex;
+  justify-content: center;      
+  padding: 4rem 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.detail-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+/* Image */
+.detail-image {
+  width: 420px;
+  height: 340px;
+  object-fit: contain;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+/* Text Card */
+.detail-info {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  max-width: 550px;
+}
+
+.detail-info h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: #502212;
+}
+
+.detail-info p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #502212;
+}
+
+.detail-info p strong {
+  color: #FF8732;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .menu-item-detail {
+    align-items: stretch;
+  }
+
+  .back-button {
+    margin: 1.5rem;
+  }
+
+  .detail-background {
+    padding: 2rem 1rem;
+  }
+
+  .detail-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .detail-image {
+    width: 80%;
+    height: auto;
+  }
+
+  .detail-info {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .detail-info h1 {
+    font-size: 2rem;
+  }
+
+  .detail-info p {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,77 @@
+
+.bk-carousel-wrapper-slides {
+  width: 100%;
+  background-color: #fdf5e6; 
+}
+
+.bk-slide {
+  text-align: center;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bk-image-slide {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 2rem;
+}
+
+.bk-title-slide, .bk-title {
+  font-size: 2.75rem;
+  font-weight: bold;
+  color: #4b2800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-family: 'Arial', sans-serif;
+}
+
+.bk-desc-slide, .bk-desc {
+  font-size: 1.25rem;
+  color: #6e4b28;
+  margin-bottom: 1.5rem;
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+}
+
+.bk-btn-slide, .bk-btn {
+  background-color: #ea3c12;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bk-btn-slide:hover, .bk-btn:hover {
+  background-color: #c83210;
+}
+
+.bk-deal-row-slide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.bk-small-img-slide {
+  width: 110px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.bk-price-slide {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d62b00;
+}
