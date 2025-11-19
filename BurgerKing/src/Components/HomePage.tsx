@@ -2,12 +2,14 @@ import "../Homepage.css";
 import AppSectionHome from "./AppSectionHome";
 import Logo from "../assets/logo-bk.svg";
 import NavbarFooter from "./navbarFooter";
-import HeroSection from "./HeroSectionHome";
+import GrillSection from "./GrillSectionHome";
+import CarouselHomePage from "./CarouselHomePage";
+import HomeCategory from "./CategoriesHomePage";
+
 
 function HomePage() {
   return (
     <>
-      {/* Zet de banner buiten NavbarFooter */}
       <div className="app-banner-homepage">
         <a
           href="https://burgerking.be/nl/app"
@@ -26,10 +28,11 @@ function HomePage() {
           <span className="arrow-homepage">&#8250;</span>
         </a>
       </div>
-      
       <NavbarFooter>
-        <HeroSection />
+        <CarouselHomePage />
+        <GrillSection />
         <AppSectionHome />
+        <HomeCategory />
       </NavbarFooter>
     </>
   );

@@ -59,3 +59,47 @@
   padding: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
+@media (max-width: 768px) {
+  .app-section-homepage {
+    flex-direction: column-reverse;     /* beeld onderaan, tekst bovenaan */
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .app-section-left-homepage,
+  .app-section-right-homepage {
+    width: 100%;
+  }
+
+  .app-section-left-homepage {
+    margin-top: 20px;
+  }
+
+  .bk-phone-homepage {
+    width: 180px;
+    margin: 0 auto 20px auto;
+  }
+
+  .app-section-right-homepage h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    padding-right: 0;
+  }
+
+  .app-section-right-homepage p {
+    font-size: 1rem;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+
+  .bk-app-button-homepage {
+    font-size: 0.9rem;
+    padding: 10px 25px;
+  }
+
+  .qr-code-homepage {
+   display: none;
+  }
+}

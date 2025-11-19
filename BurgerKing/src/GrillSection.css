@@ -1,4 +1,3 @@
-/* ========== HERO SECTION BASIS ========== */
 .hero-section-HeroSectie {
   display: flex;
   align-items: center;
@@ -13,10 +12,9 @@
   position: relative;
 }
 
-/* ========== HERO TEXT ========== */
 .hero-text-HeroSectie {
   position: relative;
-  z-index: 5; /* tekst boven decoratieve images */
+  z-index: 5; 
 }
 
 .hero-text-HeroSectie h1 {
@@ -26,7 +24,7 @@
   color: #4b1c04;
 }
 
-/* ========== GRILL CIRKEL ========== */
+
 .grill-circle-container-HeroSectie {
   position: relative;
   width: 140px;
@@ -38,8 +36,6 @@
 .grill-circle-container-HeroSectie:hover {
   transform: scale(1.05);
 }
-
-/* ronde vorm + zwarte rand + conic gradient */
 .grill-circle-HeroSectie {
   width: 100%;
   height: 100%;
@@ -53,10 +49,10 @@
   overflow: hidden;
 }
 
-/* Burgericoon binnenin */
+
 .burger-icon-HeroSectie {
   font-size: 48px;
-  color: #c63c1c; /* BK donkerrood */
+  color: #c63c1c; 
   stroke: #111;
   stroke-width: 10;
   filter: drop-shadow(0 1px 0 #111);
@@ -64,7 +60,7 @@
 }
 
 .burger-icon-HeroSectie.grilling {
-  color: #f2a900; /* goudgeel bij grillen */
+  color: #f2a900; 
   transform: scale(1.08);
   filter: drop-shadow(0 0 8px rgba(226, 88, 34, 0.6));
   animation: sizzleHeroSectie 0.8s infinite alternate;
@@ -79,7 +75,7 @@
   }
 }
 
-/* ========== TEKST EN CTA ========== */
+
 .grill-text-HeroSectie {
   font-size: 1.2rem;
   color: #6b3b1f;
@@ -103,7 +99,7 @@
   transform: scale(1.05);
 }
 
-/* ========== DECORATIEVE IMAGES (bun + patty) ========== */
+
 .hero-bun-HeroSectie {
   position: absolute;
   left: 0;
@@ -130,36 +126,58 @@
   filter: drop-shadow(-10px 10px 20px rgba(0, 0, 0, 0.15));
 }
 
-/* subtiele fade-in animatie */
+
 @keyframes fadeInHeroSectie {
   to {
     opacity: 1;
   }
 }
 
-/* ========== RESPONSIEF ========== */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .hero-section-HeroSectie {
-    height: auto;
     padding: 4rem 1rem;
   }
 
   .hero-text-HeroSectie h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 2rem;
   }
 
   .grill-circle-container-HeroSectie {
     width: 120px;
     height: 120px;
+    margin-bottom: 2rem;
   }
 
   .burger-icon-HeroSectie {
-    font-size: 40px;
+    font-size: 2rem;
+  }
+
+  .grill-text-HeroSectie {
+    font-size: 1rem;
+    padding: 0 1rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .discover-btn-HeroSectie {
+    font-size: 1rem;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
   }
 
   .hero-bun-HeroSectie,
   .hero-patty-HeroSectie {
-    display: none;
+    width: 200px;
+    transform: none;
+  }
+
+  .hero-bun-HeroSectie {
+    left: -30px;
+  }
+
+  .hero-patty-HeroSectie {
+    right: -30px;
   }
 }
-

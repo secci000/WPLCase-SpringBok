@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from "react";
-import "../HeroSection.css";
-import bunImg from "../assets/bun.png";
-import pattyImg from "../assets/patty.png";
+import "../GrillSection.css";
+import bunImg from "../assets/home/bun.png";
+import pattyImg from "../assets/home/patty.png";
 import { GiHamburger } from "react-icons/gi";
 
-function HeroSection() {
+function GrillSection() {
   const [grillLevel, setGrillLevel] = useState(0);
   const [isGrilling, setIsGrilling] = useState(false);
   const animationRef = useRef<number | null>(null);
@@ -80,7 +80,7 @@ function HeroSection() {
   );
 }
 
-export default HeroSection;
+export default GrillSection;
 
 
 
