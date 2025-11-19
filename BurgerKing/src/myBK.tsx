@@ -113,6 +113,16 @@ const MyBK = () => {
                     </div>
                 </div>
             </section>
+            <section className="section-faq-wrapper">
+                <div className="faq-container">
+                    <div className="faq-content">
+                        <h2>Vragen over My Burger King?</h2>
+                        <a>
+                            Wij hebben ook antwoorden
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };
