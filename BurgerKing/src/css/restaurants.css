@@ -1,8 +1,8 @@
 .restaurants-layout {
   display: grid;
   grid-template-columns: 0.7fr 2fr;
-  height: calc(100vh - 80px); /* hoogte minus navbar, eventueel aanpassen */
-  background-color: #f7e2c8;  /* licht beige zoals BK */
+  height: calc(100vh - 80px);
+  background-color: #f7e2c8;
 }
 
 .restaurants-sidebar {
@@ -174,3 +174,259 @@
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
   transform: translate(-50%, -80%);
 }
+
+.page-wrapper {
+  background-color: #f7e2c8;
+  min-height: 100vh;
+}
+
+.restaurant-detail-page {
+  max-width: 1120px;
+  margin: 0 auto 48px;
+  padding: 16px 16px 48px;
+}
+
+.detail-back-btn {
+  background: none;
+  border: none;
+  padding: 8px 0;
+  margin-bottom: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #3b3b3b;
+}
+
+.detail-back-btn:hover {
+  text-decoration: underline;
+}
+
+.detail-hero-card {
+  background: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+  color: #3b3b3b; 
+}
+
+.detail-hero-map {
+  height: 260px;
+}
+
+.detail-leaflet-map {
+  width: 100%;
+  height: 100%;
+}
+
+.detail-hero-info {
+  padding: 24px 32px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  color: #3b3b3b;
+}
+
+.detail-hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detail-hero-info h1 {
+  font-size: 28px;
+  margin: 0 0 8px 0;
+}
+
+.detail-hero-address-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.detail-address {
+  font-size: 15px;
+}
+
+.detail-open-status {
+  font-size: 14px;
+}
+
+.detail-open {
+  color: #80b000;
+}
+
+.detail-closed {
+  color: #d2322d;
+}
+
+.detail-route-btn {
+  padding: 10px 22px;
+  border-radius: 2px;
+  border: none;
+  background-color: #f68b1f;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: center;
+}
+
+.detail-main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+  gap: 24px;
+}
+
+.detail-left-column,
+.detail-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.detail-card {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 20px 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  color: #3b3b3b;
+  font-size: 14px;
+}
+
+.detail-card-title {
+  font-size: 18px;
+  margin: 0 0 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detail-icon {
+  font-size: 18px;
+}
+
+.detail-opening-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.detail-opening-table td {
+  padding: 4px 0;
+}
+
+.detail-day {
+  width: 40px;
+}
+
+.detail-day-today {
+  color: #80b000;
+  font-weight: 600;
+}
+
+.detail-hours-today {
+  color: #80b000;
+}
+
+.detail-day-closed {
+  color: #d2322d;
+  font-weight: 600;
+}
+
+.detail-hours-closed {
+  color: #d2322d;
+  font-weight: 600;
+}
+
+.detail-description {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.detail-payment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.detail-payment-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.detail-payment-icon {
+  font-size: 16px;
+}
+
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.detail-tag-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  background-color: #f3e3cf;
+  font-size: 12px;
+}
+
+.detail-similar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.detail-similar-list li + li {
+  margin-top: 12px;
+}
+
+.detail-similar-meta {
+  font-size: 12px;
+  color: #555;
+}
+
+.bk-marker {
+  position: relative;
+  border: none;
+  background: transparent;
+}
+
+.bk-marker::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background-color: #f68b1f;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
+  transform: translate(-50%, -80%);
+}
+
+.map-popup {
+  font-size: 13px;
+}
+
+.map-popup-detail-btn {
+  margin-top: 6px;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 2px;
+  background-color: #f68b1f;
+  color: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.map-popup-detail-btn:hover {
+  opacity: 0.9;
+}
+

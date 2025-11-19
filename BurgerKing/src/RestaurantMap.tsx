@@ -8,21 +8,23 @@ type RestaurantMapProps = {
   restaurants: Restaurant[];
   selectedRestaurant: Restaurant | null;
   onSelect: (restaurant: Restaurant) => void;
+  onOpenDetail: (restaurant: Restaurant) => void;
 };
+
+const defaultCenter: LatLngExpression = [50.85, 4.35];
 
 const orangeMarker: L.DivIcon = L.divIcon({
   className: "bk-marker",
-  html: "",               // we stylen alles via CSS
+  html: "",
   iconSize: [26, 26],
   iconAnchor: [13, 26],
 });
-
-const defaultCenter: LatLngExpression = [50.85, 4.35]; // ongeveer Brussel
 
 const RestaurantMap: React.FC<RestaurantMapProps> = ({
   restaurants,
   selectedRestaurant,
   onSelect,
+  onOpenDetail,
 }) => {
   const center: LatLngExpression = selectedRestaurant
     ? [selectedRestaurant.latitude, selectedRestaurant.longitude]
@@ -50,11 +52,20 @@ const RestaurantMap: React.FC<RestaurantMapProps> = ({
           }}
         >
           <Popup>
-            <strong>Burger King</strong>
-            <br />
-            {restaurant.street}
-            <br />
-            {restaurant.postalCode} {restaurant.city}
+            <div className="map-popup">
+              <strong>Burger King</strong>
+              <br />
+              {restaurant.street}
+              <br />
+              {restaurant.postalCode} {restaurant.city}
+              <br />
+              <button
+                className="map-popup-detail-btn"
+                onClick={() => onOpenDetail(restaurant)}
+              >
+                Bekijk details
+              </button>
+            </div>
           </Popup>
         </Marker>
       ))}
