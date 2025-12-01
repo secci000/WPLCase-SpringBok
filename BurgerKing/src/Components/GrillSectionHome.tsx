@@ -3,11 +3,13 @@ import "../css/GrillSection.css";
 import bunImg from "../assets/home/bun.png";
 import pattyImg from "../assets/home/patty.png";
 import { GiHamburger } from "react-icons/gi";
+import { useNavigate } from "react-router-dom";
 
 function GrillSection() {
   const [grillLevel, setGrillLevel] = useState(0);
   const [isGrilling, setIsGrilling] = useState(false);
   const animationRef = useRef<number | null>(null);
+  const navigate = useNavigate();
 
   const startGrilling = () => {
     if (grillLevel === 100 || isGrilling) return;
@@ -71,7 +73,7 @@ function GrillSection() {
               : "Klik op de burger om te grillen 🍔"}
           </p>
         ) : (
-          <button className="discover-btn-HeroSectie">
+          <button className="discover-btn-HeroSectie" onClick={() => navigate("/menu")}>
             Ontdek onze burgers →
           </button>
         )}

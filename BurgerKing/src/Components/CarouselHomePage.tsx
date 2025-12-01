@@ -7,8 +7,10 @@ import CrispyChicken from "../assets/home/crispy-chicken.png";
 import Shakes from "../assets/home/shakes.png";
 import CrispyVeggie from "../assets/home/crispy-veggie.png";
 import KingDeal from "../assets/home/kingdeal.png";
+import { useNavigate } from "react-router-dom";
 
 const CarouselHomePage = () => {
+  const navigate = useNavigate();
   return (
     <section className="bk-carousel-wrapper-slides">
       <Carousel>
@@ -18,7 +20,7 @@ const CarouselHomePage = () => {
             <img src={SmokingMozza} className="bk-image-slide" alt="Smoking Mozza" />
             <h1 className="bk-title-slide">Smoking Mozza</h1>
             <p className="bk-desc-slide">Bijna zo cheesy als je favoriete romcom.</p>
-            <button className="bk-btn-slide">Ontdek</button>
+            <button className="bk-btn-slide" onClick={() => navigate("/menu")}>Ontdek</button>
           </div>
         </CarouselItem>
 
@@ -41,7 +43,7 @@ const CarouselHomePage = () => {
 
             <h1 className="bk-title">Exclusief aan de Drive</h1>
             <p className="bk-desc">Kleine (of grote) honger onderweg?</p>
-            <button className="bk-btn">Ontdek alle deals</button>
+            <button className="bk-btn" onClick={() => navigate("/deals")}>Ontdek alle deals</button>
           </div>
         </CarouselItem>
 
@@ -50,7 +52,7 @@ const CarouselHomePage = () => {
             <img src={Shakes} className="bk-image-slide" alt="Shakes" />
             <h1 className="bk-title-slide">King Shakes</h1>
             <p className="bk-desc-slide">Ready to go bananas?!</p>
-            <button className="bk-btn-slide">Ontdek</button>
+            <button className="bk-btn-slide" onClick={() => navigate("/menu")}>Ontdek</button>
           </div>
         </CarouselItem>
 
@@ -59,7 +61,7 @@ const CarouselHomePage = () => {
             <img src={CrispyVeggie} className="bk-image-slide" alt="Crispy Veggie" />
             <h1 className="bk-title-slide">Crispy Veggie</h1>
             <p className="bk-desc-slide">No chicks allowed. Echt veggie!</p>
-            <button className="bk-btn-slide">Proef hem</button>
+            <button className="bk-btn-slide" onClick={() => navigate("/menu")}>Proef hem</button>
           </div>
         </CarouselItem>
 
@@ -68,7 +70,7 @@ const CarouselHomePage = () => {
             <img src={KingDeal} className="bk-image-slide" alt="King Deal" />
             <h1 className="bk-title-slide">KingDeal €5</h1>
             <p className="bk-desc-slide">King Size. Small Price.</p>
-            <button className="bk-btn-slide">Meer weten</button>
+            <button className="bk-btn-slide" onClick={() => navigate("/menu")}>Meer weten</button>
           </div>
         </CarouselItem>
 

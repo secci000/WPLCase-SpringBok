@@ -1,18 +1,19 @@
 import "../css/Homepage.css";
 import AppSectionHome from "./AppSectionHome";
 import Logo from "../assets/logo-bk.svg";
-import NavbarFooter from "./navbarFooter";
 import GrillSection from "./GrillSectionHome";
 import CarouselHomePage from "./CarouselHomePage";
 import HomeCategory from "./CategoriesHomePage";
+import { useNavigate } from "react-router-dom";
 
 
 function HomePage() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="app-banner-homepage">
         <a
-          href="https://burgerking.be/nl/app"
+          onClick={() => navigate("/myBk")}
           target="_blank"
           rel="noopener noreferrer"
           className="app-link-homepage"

@@ -2,15 +2,20 @@
 .bk-carousel-wrapper-slides {
   width: 100%;
   background-color: #fdf5e6; 
+  display: flex;
+  align-items: stretch;
 }
 
 .bk-slide {
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-grow: 1;
+  box-sizing: border-box;
+  
 }
 
 .bk-image-slide {
@@ -74,4 +79,33 @@
   font-size: 1.2rem;
   font-weight: bold;
   color: #d62b00;
+}
+
+@media (max-width: 768px) {
+  .bk-title-slide, .bk-title {
+    font-size: 1.8rem;
+  }
+
+  .bk-desc-slide, .bk-desc {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .bk-deal-row-slide {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .bk-small-img-slide {
+    width: 90px;
+  }
+
+  .bk-price-slide {
+    font-size: 1rem;
+  }
+
+  .bk-btn-slide, .bk-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem;
+  }
 }
