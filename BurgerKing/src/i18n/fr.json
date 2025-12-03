@@ -1,0 +1,42 @@
+{
+  "footer": {
+    "newsletter": "Inscrivez-vous à la newsletter",
+    "contact": "Contactez-nous",
+    "terms": "Conditions générales d'utilisation",
+    "privacy": "Confidentialité et cookies",
+    "cookieSettings": "Paramètres des cookies",
+    "rotatorStaticText": "dans ta boîte mail"
+  },
+  "mybk": {
+    "downloadTitle": "Télécharge l’application maintenant",
+    "downloadText": "Télécharge l’application My Burger King, collecte les BK Coins, profite et plonge dans le royaume des burgers.",
+    "kingdomTitle": "Commandez (et mangez) plus, gagnez plus",
+    "coinsText": "Avec l'application My Burger King, vous gagnez des BK Coins à chaque commande...",
+    "advantagesText": {
+      "title": "dans votre poche !",
+      "description": "Avec My Burger King, Burger King est toujours dans votre poche : découvrez des coupons, économisez pour des produits gratuits ou commandez depuis le confort de votre canapé avec King&Collect."
+    },
+    "cards": {
+      "kingCollect": {
+        "title": "King&Collect",
+        "text": "Le service King & collect te permet de commander directement via l’Application puis de retirer la commande dans le restaurant de ton choix."
+      },
+      "bkCoins": {
+        "title": "BK Coins ?",
+        "text": "Collectez notre monnaie locale, les BK Coins, et économisez pour obtenir des produits gratuits."
+      },
+      "treatYourself": {
+        "title": "Faites-vous plaisir",
+        "text": "Accumulez suffisamment de points pour obtenir des snacks gratuits, des burgers ou même un bon de 10 euros."
+      }
+    },
+    "threeSteps": "En 3 étapes",
+    "step1": "Télécharge l’application My Burger King",
+    "step2": "Scanner ton BK ID avant de payer pour collecter des BK Coins.",
+    "step3": "Économise pour des produits gratuits et fais-toi plaisir !",
+    "faq": {
+      "title": "Des questions à propos de My Burger King ?",
+      "link": "On a les réponses!"
+    }
+  }
+}
