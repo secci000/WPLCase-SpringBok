@@ -2,8 +2,12 @@ import { useEffect, useState } from "react";
 import logoBK from "../assets/navBar/logo-bk.svg";
 import iconHamburgerMenu from "../assets/navBar/menu.svg";
 import { NavLink } from "react-router-dom";
+import { useLanguage } from "../i18n/LanguageContext";
 
 const NavBar = () => {
+  const {lang, setLang } = useLanguage();
+  const switchLang = (l: string) => setLang(l);
+
   //Shrink navbar
   const [scrolled, setScrolled] = useState(false);
 
@@ -36,10 +40,10 @@ const NavBar = () => {
           </li>
 
           <li className="dropdown">
-            <a href="#" className="dropbtn">NL</a>
+            <a className="dropbtn">{lang.toUpperCase()}</a>
             <div className="dropdown-content">
-              <a href="#">NL</a>
-              <a href="#">FR</a>
+              <a onClick={() => switchLang("nl")}>NL</a>
+              <a onClick={() => switchLang("fr")}>FR</a>
             </div>
           </li>
         </ul>

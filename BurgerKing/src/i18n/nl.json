@@ -1,0 +1,44 @@
+{
+  "footer": {
+    "newsletter": "Schrijf je in voor de nieuwsbrief",
+    "contact": "Contacteer ons",
+    "terms": "Algemene gebruiksvoorwaarden",
+    "privacy": "Privacy en cookies",
+    "cookieSettings": "Cookie-instellingen",
+    "rotatorStaticText": "in je mailbox"
+  },
+
+  "mybk": {
+    "downloadTitle": "Download de app nu",
+    "downloadText": "Download de My Burger King app, spaar BK Coins, geniet en waan je in het koninkrijk der burgers.",
+    "kingdomTitle": "Bestel (en eet) meer, win meer",
+    "coinsText": "Met de My Burger King app spaar je bij elke bestelling BK Coins...",
+    "advantagesText": {
+      "title": "in je zak!",
+      "description": "Met My Burger King heb je Burger King altijd in je zak: ontdek coupons, spaar voor gratis producten of bestel vanuit je luie zetel met King&Collect."
+    },
+    "cards": {
+      "kingCollect": {
+        "title": "King&Collect",
+        "text": "Via King&Collect kan je lekker vanuit je luie zetel (of van waar dan ook) je bestelling plaatsen bij je favoriete restaurant. Het enige wat je moet doen, is je bestelling zelf komen ophalen."
+      },
+      "bkCoins": {
+        "title": "BK Coins?",
+        "text": "Verzamel onze lokale munteenheid, de BK Coins, en spaar voor gratis producten."
+      },
+      "treatYourself": {
+        "title": "Verwen jezelf",
+        "text": "Genoeg punten geven recht op gratis snacks, burgers of zelfs een coupon van 10 euro."
+      }
+    },
+    "threeSteps": "In 3 stappen",
+    "step1": "Download de My Burger King app",
+    "step2": "Scan je BK ID aan de kiosk, kassa of drive",
+    "step3": "Spaar voor producten en verwen jezelf!",
+    "faq": {
+        "title": "Vragen over My Burger King?",
+        "link": "Wij hebben ook antwoorden"
+    }
+  }
+
+}

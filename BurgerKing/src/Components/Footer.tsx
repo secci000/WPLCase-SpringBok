@@ -1,7 +1,10 @@
 import instagram from "../assets/footer/instagram.svg";
 import xCom from "../assets/footer/x-com.svg";
 import facebook from "../assets/footer/facebook.svg";
+import { useLanguage } from "../i18n/LanguageContext";
+
 const Footer = () => {
+  const { t, lang, setLang } = useLanguage();
   return (
     <>
       {/* Footer */}
@@ -18,33 +21,32 @@ const Footer = () => {
                 <span className="word">Whopper</span>
                 <span className="word">Chicken</span>
               </span>
-              <span className="static-text"> in je mailbox</span>
+              <span className="static-text">{t("footer.rotatorStaticText")}</span>
             </h1>
           </article>
           <article className="footer-signin-mailbox">
-            <a href="#">Schrijf je in voor de nieuwsbrief</a>
+            <a href="#">{t("footer.newsletter")}</a>
           </article>
 
         </section>
 
         <section className="footer-bottom">
           <ul className="footer-bottom-info">
-            <li><a href="#">Contacteer ons</a></li>
-            <li><a href="#">Algemene gebruiksvoorwaarden</a></li>
-            <li><a href="#">Privacy en cookies</a></li>
-            <li><a href="#">Algemene voorwaarden Click&Collect en My Burger King</a></li>
-            <li><a href="#">Cookie-Instellingen</a></li>
+            <li><a href="#">{t("footer.contact")}</a></li>
+            <li><a href="#">{t("footer.terms")}</a></li>
+            <li><a href="#">{t("footer.privacy")}</a></li>
+            <li><a href="#">{t("footer.cookieSettings")}</a></li>
           </ul>
 
           <ul className="footer-bottom-socials-language">
-            <li><a href="#"><img src={instagram} alt="instagram" /></a></li>
-            <li><a href="#"><img src={xCom} alt="x" /></a></li>
-            <li><a href="#"><img src={facebook} alt="facebook" /></a></li>
+            <li><a href="https://www.instagram.com/burgerkingbe/" target="_blank" ><img src={instagram} alt="instagram" /></a></li>
+            <li><a href="https://x.com/BurgerKingBE_NL" target="_blank"><img src={xCom} alt="x" /></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100064496271008&brand_redir=345420055853895#" target="_blank"><img src={facebook} alt="facebook"/></a></li>
             <li className="footer-dropdown">
-              <a href="#" className="footer-dropbtn">NL</a>
+              <a className="footer-dropbtn">{lang.toUpperCase()}</a>
               <div className="footer-dropdown-content">
-                <a href="#">NL</a>
-                <a href="#">FR</a>
+                <a onClick={() => setLang("nl")}>NL</a>
+                <a onClick={() => setLang("fr")}>FR</a>
               </div>
             </li>
           </ul>

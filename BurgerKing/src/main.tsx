@@ -5,11 +5,11 @@ import "./css/restaurants.css";
 import "leaflet/dist/leaflet.css";
 import "./leafletFix";
 import App from "./App";
-
+import { LanguageProvider } from "./i18n/LanguageContext";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    {/*<Menu />*/}
-    {/*<MyBK/>*/}
-    <App/>
+    <LanguageProvider>
+      <App />
+    </LanguageProvider>
   </StrictMode>
 );
