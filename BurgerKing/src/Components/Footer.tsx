@@ -39,8 +39,9 @@ const Footer = () => {
           </ul>
 
           <ul className="footer-bottom-socials-language">
-            <li><a href="#"><img src={instagram} alt="instagram" /></a></li>
-            <li><a href="#"><img src={xCom} alt="x" /></a></li>
+            <li><a href="https://www.instagram.com/burgerkingbe/" target="_blank" ><img src={instagram} alt="instagram" /></a></li>
+            <li><a href="https://x.com/BurgerKingBE_NL" target="_blank"><img src={xCom} alt="x" /></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100064496271008&brand_redir=345420055853895#" target="_blank"><img src={facebook} alt="facebook"/></a></li>
             <li className="footer-dropdown">
               <a className="footer-dropbtn">{lang.toUpperCase()}</a>
               <div className="footer-dropdown-content">
