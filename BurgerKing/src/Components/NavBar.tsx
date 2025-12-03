@@ -33,11 +33,12 @@ const NavBar = () => {
           </li>
           <li className="nav-pages">
             <NavLink to="/menu">Menu</NavLink>
-            <a href="#">Deals</a>
+            <NavLink to="/deals">Deals</NavLink> {/* 👈 nieuwe route */}
             <NavLink to="/restaurant">Restaurants</NavLink>
             <a href="https://jobs.burgerking.be/nl" target="_blank">Jobs</a>
             <NavLink to="/myBK" className="nav-myBK">MyBurgerKing</NavLink>
           </li>
+
 
           <li className="dropdown">
             <a className="dropbtn">{lang.toUpperCase()}</a>
