@@ -84,13 +84,7 @@ const Menu: React.FC = () => {
                     </ul>
                     <ul className="filter-allergens relative">
                         <li className="relative">
-                            <a
-                                href="#"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    toggleDropdown();
-                                }}
-                            >
+                            <a href="#" onClick={(e) => {e.preventDefault(); toggleDropdown();}}>
                                 Allergenen
                             </a>
 
@@ -99,10 +93,8 @@ const Menu: React.FC = () => {
                                     {allAllergens.map((a) => (
                                         <button
                                             key={a}
-                                            className={`allergen-btn ${selectedAllergens.includes(a) ? "active" : ""
-                                                }`}
-                                            onClick={() => toggleAllergen(a)}
-                                        >
+                                            className={`allergen-btn ${selectedAllergens.includes(a) ? "active" : ""}`}
+                                            onClick={() => toggleAllergen(a)}>
                                             {a}
                                         </button>
                                     ))}
@@ -110,8 +102,6 @@ const Menu: React.FC = () => {
                             )}
                         </li>
                     </ul>
-
-
                 </nav>
                 {/* Menu Items */}
                 <section className="menu-section">

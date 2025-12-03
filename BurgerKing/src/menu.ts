@@ -67,7 +67,7 @@ const menuData = {
           description_nl: "Onze klassieker: 100 % vlamgegrilde rundvleesburger met ketchup, mosterd en knapperige augurken.",
           description_fr: "Notre classique : burger 100 % bœuf grillé à la flamme, ketchup, moutarde en cornichons croquants.",
           price: null,
-          allergens: ["gluten", "mustard"],
+          allergens: ["gluten", "mosterd"],
           image: Hamburger
         },
         {
@@ -77,7 +77,7 @@ const menuData = {
           description_nl: "Vlamgegrilde rundvleesburger met smeltende kaas, ketchup, mosterd en augurken.",
           description_fr: "Burger de bœuf grillé à la flamme, fromage fondant, ketchup, moutarde et cornichons.",
           price: null,
-          allergens: ["gluten", "milk", "mustard"],
+          allergens: ["gluten", "melk", "mosterd"],
           image: Cheeseburger
         },
         {
@@ -87,7 +87,7 @@ const menuData = {
           description_nl: "Dubbele portie vlamgegrild rundvlees met dubbele kaas – pure, hartige smaak.",
           description_fr: "Deux steaks de bœuf grillés à la flamme, double fromage – double dose de plaisir.",
           price: null,
-          allergens: ["gluten", "milk", "mustard"],
+          allergens: ["gluten", "melk", "mosterd"],
           image: DoubleCheeseburger
         },
         {
@@ -97,7 +97,7 @@ const menuData = {
           description_nl: "De legendarische Whopper: 100 % vlamgegrilde rundvleesburger met verse sla, tomaat, ui, augurken en onze iconische saus.",
           description_fr: "Le légendaire Whopper : bœuf 100 % grillé à la flamme, salade fraîche, tomate, oignon, cornichons en notre sauce emblématique.",
           price: 6.8,
-          allergens: ["gluten", "egg", "mustard"],
+          allergens: ["gluten", "ei", "mosterd"],
           image: Whopper
         },
         {
@@ -107,7 +107,7 @@ const menuData = {
           description_nl: "De smaak van de klassieker, zonder vlees: gegrilde veggie burger met verse groenten en Whopper-saus.",
           description_fr: "Toute la saveur du classique, zonder viande : burger végétarien grillé avec légumes frais en sauce Whopper.",
           price: 6.65,
-          allergens: ["gluten", "soy", "mustard"],
+          allergens: ["gluten", "soy", "mosterd"],
           image: VeggieWhopper
         },
         {
@@ -117,7 +117,7 @@ const menuData = {
           description_nl: "Twee vlamgegrilde rundsburgers met gesmolten kaas, verse sla en onze beroemde Big King-saus.",
           description_fr: "Deux steaks de bœuf grillés à la flamme, fromage fondant, salade fraîche en onze célèbre sauce Big King.",
           price: 6.6,
-          allergens: ["gluten", "milk", "mustard", "egg"],
+          allergens: ["gluten", "melk", "mosterd", "ei"],
           image: BigKing
         },
         {
@@ -127,7 +127,7 @@ const menuData = {
           description_nl: "Knapperige visfilet met romige saus en frisse sla, geserveerd op een zacht broodje.",
           description_fr: "Filet de poisson croustillant, sauce onctueuse en salade croquante dans un pain moelleux.",
           price: 6.6,
-          allergens: ["gluten", "fish", "egg"],
+          allergens: ["gluten", "vis", "ei"],
           image: KingFish
         },
         {
@@ -137,7 +137,7 @@ const menuData = {
           description_nl: "Krokante kipfilet met verse tomaat, knapperige sla en romige mayonaise.",
           description_fr: "Filet de poulet croustillant avec tomate fraîche, salade croquante en mayonnaise onctueuse.",
           price: 6.6,
-          allergens: ["gluten", "egg", "soy"],
+          allergens: ["gluten", "ei", "soy"],
           image: CrispyChicken
         },
         {
@@ -147,7 +147,7 @@ const menuData = {
           description_nl: "Lang broodje gevuld met malse gepaneerde kip, frisse sla en romige saus.",
           description_fr: "Pain allongé garni de poulet tendre pané, salade fraîche en sauce crémeuse.",
           price: 6.7,
-          allergens: ["gluten", "egg", "soy"],
+          allergens: ["gluten", "ei", "soy"],
           image: LongChicken
         },
         {
@@ -157,7 +157,7 @@ const menuData = {
           description_nl: "Vlamgegrilde rundvleesburger met pittige cajunsaus, verse groenten, krokante uien en cheddar.",
           description_fr: "Burger de bœuf grillé à la flamme avec sauce cajun relevée, légumes frais, oignons frits en cheddar.",
           price: 7.85,
-          allergens: ["gluten", "milk", "soy", "mustard"],
+          allergens: ["gluten", "melk", "soy", "mosterd"],
           image: LouisianaBeef
         },
         {
@@ -167,7 +167,7 @@ const menuData = {
           description_nl: "Vegetarische burger met cajunsaus, tomaten, sla, krokante uien en cheddar – vol smaak, zonder vlees.",
           description_fr: "Burger végétarien avec sauce cajun, tomates, salade, oignons frits en cheddar – tout le goût, sans viande.",
           price: 7.7,
-          allergens: ["gluten", "milk", "soy", "mustard"],
+          allergens: ["gluten", "melk", "soy", "mosterd"],
           image: LouisianaVeggie
         },
         {
@@ -177,7 +177,7 @@ const menuData = {
           description_nl: "Premium veggie burger met mosterd-uien saus, krokante uien en verse tomaat – een meesterlijke keuze.",
           description_fr: "Burger végétarien premium avec sauce moutarde-oignon, oignons croustillants et tomate fraîche – un choix de maître.",
           price: 9.75,
-          allergens: ["gluten", "milk", "soy", "mustard"],
+          allergens: ["gluten", "melk", "soy", "mosterd"],
           image: MasterVeggie
         },
         {
@@ -187,7 +187,7 @@ const menuData = {
           description_nl: "Vlamgegrilde rundvleesburger met bacon, krokante uien en rijke barbecuesaus – de ultieme grillsmaak.",
           description_fr: "Burger de bœuf grillé à la flamme, bacon, oignons croustillants en sauce barbecue intense – le goût du grill ultime.",
           price: 8.75,
-          allergens: ["gluten", "milk", "soy", "mustard"],
+          allergens: ["gluten", "melk", "soy", "mosterd"],
           image: Steakhouse
         },
         {
@@ -197,7 +197,7 @@ const menuData = {
           description_nl: "Sappige Angusburger op briochebroodje met mosterd-uien saus, krokante uien en verse tomaat.",
           description_fr: "Burger Angus juteux dans un pain brioché, sauce moutarde-oignon, oignons croustillants en tomate fraîche.",
           price: 9.9,
-          allergens: ["gluten", "milk", "egg", "mustard"],
+          allergens: ["gluten", "melk", "ei", "mosterd"],
           image: MasterAgnus
         },
         {
@@ -207,7 +207,7 @@ const menuData = {
           description_nl: "De Master Angus met extra gerookte bacon voor een onweerstaanbare grillsmaak.",
           description_fr: "Le Master Angus avec du bacon fumé en naast pour une saveur grillée irrésistible.",
           price: 11,
-          allergens: ["gluten", "milk", "egg", "mustard"],
+          allergens: ["gluten", "melk", "ei", "mosterd"],
           image: MasterAgnusBacon
         },
         {
@@ -217,7 +217,7 @@ const menuData = {
           description_nl: "Dubbele vlamgegrilde burgers met bacon, krokante uien en rijke barbecuesaus – pure kracht in elke hap.",
           description_fr: "Deux burgers grillés à la flamme avec bacon, oignons croustillants en sauce barbecue – une explosion de saveurs.",
           price: 10.45,
-          allergens: ["gluten", "milk", "soy", "mustard"],
+          allergens: ["gluten", "melk", "soy", "mosterd"],
           image: DoubleSteakhouse
         },
         {
@@ -227,7 +227,7 @@ const menuData = {
           description_nl: "Twee vlamgegrilde steaks, smeltende kaas en alle Whopper-toppings – dubbel genieten.",
           description_fr: "Deux steaks grillés à la flamme, fromage fondant en toutes les garnitures du Whopper – double plaisir garanti.",
           price: 9.55,
-          allergens: ["gluten", "milk", "egg", "mustard"],
+          allergens: ["gluten", "melk", "ei", "mosterd"],
           image: DoubleWhopperCheese
         },
         {
@@ -237,7 +237,7 @@ const menuData = {
           description_nl: "De extra grote versie van onze iconische Big King – meer vlees, meer smaak, meer King.",
           description_fr: "La version XXL de notre emblématique Big King – plus de viande, plus de goût, plus de King.",
           price: 9.55,
-          allergens: ["gluten", "milk", "egg", "mustard"],
+          allergens: ["gluten", "melk", "ei", "mosterd"],
           image: BigKingXXL
         }
       ]
@@ -252,7 +252,7 @@ const menuData = {
           description_nl: "Krokante Mozza Fingers met zongedroogde tomaten, pasta en verse gemengde sla – fris en hartig tegelijk.",
           description_fr: "Mozza Fingers croustillants, tomates séchées, pâtes en salade fraîche – un mélange gourmand et léger.",
           price: 7.9,
-          allergens: ["milk", "gluten"],
+          allergens: ["melk", "gluten"],
           image: MozzaSalad
         },
         {
@@ -262,7 +262,7 @@ const menuData = {
           description_nl: "Knapperige kipreepjes op een bedje van sla, zongedroogde tomaten en pasta – licht maar vol smaak.",
           description_fr: "Lanières de poulet croustillantes sur salade fraîche, tomates séchées en pâtes – léger mais plein de goût.",
           price: 7.9,
-          allergens: ["gluten", "egg", "soy"],
+          allergens: ["gluten", "ei", "soy"],
           image: CrispyChickenSalad
         },
         {
@@ -287,7 +287,7 @@ const menuData = {
           description_nl: "Romig softijs gemixt met knapperige Lion-stukjes – een koninklijke crunch in elke hap.",
           description_fr: "Crème glacée onctueuse mélangée à des éclats croustillants de Lion – un plaisir royal à chaque cuillère.",
           price: 4.35,
-          allergens: ["milk", "soy"],
+          allergens: ["melk", "soy"],
           image: KingFusionVanilla
         },
         {
@@ -297,7 +297,7 @@ const menuData = {
           description_nl: "Zacht softijs met stukjes Oreo-koek – romig, krokant en onweerstaanbaar.",
           description_fr: "Glace crémeuse met morceaux d’Oreo – fondant, croquant en totalement irrésistible.",
           price: 4.35,
-          allergens: ["milk", "gluten", "soy"],
+          allergens: ["melk", "gluten", "soy"],
           image: KingFusionOreo
         },
         {
@@ -307,7 +307,7 @@ const menuData = {
           description_nl: "Romig softijs met kruidige speculoosstukjes – zoet met een vleugje warmte.",
           description_fr: "Crème glacée onctueuse met morceaux de spéculoos – douceur en épices parfaitement équilibrées.",
           price: 4.35,
-          allergens: ["milk", "gluten"],
+          allergens: ["melk", "gluten"],
           image: KingFusionSpeculoos
         },
         {
@@ -317,7 +317,7 @@ const menuData = {
           description_nl: "Zachte roomijsbasis met krokante Daim-stukjes – chocolade, karamel en crunch in één.",
           description_fr: "Glace fondante parsemée de morceaux croustillants de Daim – chocolat, caramel en croquant réunis.",
           price: 4.35,
-          allergens: ["milk", "soy"],
+          allergens: ["melk", "soy"],
           image: KingFusionDaim
         },
         {
@@ -327,7 +327,7 @@ const menuData = {
           description_nl: "Romig softijs overgoten met rijke chocoladesaus – puur genot.",
           description_fr: "Crème glacée onctueuse nappée d’une sauce chocolat intense – un pur moment de plaisir.",
           price: 3.55,
-          allergens: ["milk"],
+          allergens: ["melk"],
           image: SundaeChocolate
         },
         {
@@ -337,7 +337,7 @@ const menuData = {
           description_nl: "Zacht ijs met romige karamelsaus – een zoete klassieker.",
           description_fr: "Glace fondante nappée d’une sauce caramel onctueuse – un grand classique sucré.",
           price: 3.55,
-          allergens: ["milk"],
+          allergens: ["melk"],
           image: SundaeCaramel
         },
         {
@@ -347,7 +347,7 @@ const menuData = {
           description_nl: "Romig softijs met frisse aardbeiensaus – zoet, fruitig en verfrissend.",
           description_fr: "Glace onctueuse avec coulis de fraise – douceur en fraîcheur fruitée à chaque bouchée.",
           price: 3.55,
-          allergens: ["milk"],
+          allergens: ["melk"],
           image: SundaeAardbei
         }
       ]
@@ -422,7 +422,7 @@ const menuData = {
           description_nl: "Romige espresso met melkschuim – zacht en vol smaak.",
           description_fr: "Espresso onctueux coiffé de mousse de lait – douceur en intensité réunies.",
           price: null,
-          allergens: ["milk"],
+          allergens: ["melk"],
           image: Cappuccino
         },
         {
@@ -432,7 +432,7 @@ const menuData = {
           description_nl: "Luchtige lagen melk en espresso – een heerlijke balans van romig en sterk.",
           description_fr: "Superposition légère de lait en espresso – un équilibre parfait tussen douceur en intensité.",
           price: null,
-          allergens: ["milk"],
+          allergens: ["melk"],
           image: LatteMacchiato
         },
         {
@@ -442,7 +442,7 @@ const menuData = {
           description_nl: "Warme chocoladedrank, romig en perfect zoet – pure comfort.",
           description_fr: "Chocolat chaud crémeux en parfaitement sucré – un pur moment de douceur.",
           price: null,
-          allergens: ["milk", "soy"],
+          allergens: ["melk", "soy"],
           image: Chocolademelk
         },
         {
@@ -487,7 +487,7 @@ const menuData = {
           description_nl: "Smeltende kaas met een pittige twist, verpakt in een krokant jasje.",
           description_fr: "Fromage fondant relevé d’une touche épicée, enrobé d’une panure croustillante.",
           price: 5.20,
-          allergens: ["milk", "gluten", "soy"],
+          allergens: ["melk", "gluten", "soy"],
           image: ChiliCheeseNuggets
         },
         {
@@ -497,7 +497,7 @@ const menuData = {
           description_nl: "Zacht smeltende mozzarella in een knapperig laagje – een cheesy verleiding.",
           description_fr: "Mozzarella fondante enrobée d’une panure croustillante – une tentation ultra fromagée.",
           price: 5.20,
-          allergens: ["milk", "gluten"],
+          allergens: ["melk", "gluten"],
           image: MozzarellaSticks
         },
         {
@@ -562,7 +562,7 @@ const menuData = {
           description_nl: "Romig en zacht – de ultieme dip voor frietliefhebbers.",
           description_fr: "Crémeuse en douce – la sauce préférée des amateurs de frites.",
           price: 0.80,
-          allergens: ["egg", "mustard"],
+          allergens: ["ei", "mosterd"],
           image: Mayonaise
         },
         {
@@ -582,7 +582,7 @@ const menuData = {
           description_nl: "Zoet en kruidig met een vleugje pit – de perfecte twist bij kip en friet.",
           description_fr: "Sucrée en épicée met un touche relevée – l’accord parfait voor de kip en de friet.",
           price: 0.80,
-          allergens: ["mustard", "soy"],
+          allergens: ["mosterd", "soy"],
           image: Curry
         },
         {
@@ -607,7 +607,7 @@ const menuData = {
           description_nl: "Onze klassieke hamburger in kinderformaat – 100 % rundvlees, vlamgegrild voor een echte BK-smaak.",
           description_fr: "Notre hamburger classique en format enfant – 100 % bœuf grillé à la flamme voor een vrai goût BK.",
           price: 5.85,
-          allergens: ["gluten", "milk", "mustard"],
+          allergens: ["gluten", "melk", "mosterd"],
           image: KingJRHamburger
         },
         {
@@ -617,7 +617,7 @@ const menuData = {
           description_nl: "Mini-cheeseburger met vlamgegrild rundvlees en smeltende kaas – groot van smaak!",
           description_fr: "Mini cheeseburger met bœuf grillé à la flamme en fromage fondant – petit maar plein de goût !",
           price: 5.85,
-          allergens: ["gluten", "milk", "mustard"],
+          allergens: ["gluten", "melk", "mosterd"],
           image: KingJrCheeseburger
         },
         {
@@ -627,7 +627,7 @@ const menuData = {
           description_nl: "Drie knapperige Mozza Fingers met gesmolten kaas – een heerlijke veggie favoriet.",
           description_fr: "Trois Mozza Fingers croustillants au fromage fondant – une veggie option pleine de plaisir.",
           price: 5.85,
-          allergens: ["milk", "gluten"],
+          allergens: ["melk", "gluten"],
           image: KingJrMozza
         },
         {
@@ -637,7 +637,7 @@ const menuData = {
           description_nl: "Lekkere visburger met romige saus – mild van smaak, favoriet bij kids.",
           description_fr: "Délicieux burger de poisson met sauce onctueuse – doux en adoré des enfants.",
           price: 5.85,
-          allergens: ["gluten", "fish"],
+          allergens: ["gluten", "vis"],
           image: KingJrFish
         }
       ]
