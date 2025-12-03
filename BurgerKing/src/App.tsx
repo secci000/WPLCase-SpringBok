@@ -5,7 +5,8 @@ import NavbarFooter from "./Components/navbarFooter";
 import RestaurantPage from "./RestaurantPage";
 import HomePage from "./Components/HomePage.tsx";
 import MenuItemDetail from "./Components/MenuItemDetail.tsx";
-// Root-layout: nav + footer staan hier, inhoud via <Outlet/>
+import DealsPage from "./Components/DealsPage";
+
 const RootLayout = () => {
   return (
     <NavbarFooter>
@@ -23,8 +24,8 @@ const router = createBrowserRouter([
       { path: "/menu", element: <Menu /> },
       { path: "/restaurant", element: <RestaurantPage /> },
       { path: "/myBK", element: <MyBK /> },
-      { path: "/menu/:itemId", element:<MenuItemDetail/>},
-
+      { path: "/menu/:itemId", element: <MenuItemDetail /> },
+      { path: "/deals", element: <DealsPage /> },
     ],
   },
 ]);
