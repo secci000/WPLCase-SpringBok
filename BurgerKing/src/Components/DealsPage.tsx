@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/Deals.css";
+import "../css/BKStyles.css";
 import { Link } from "react-router-dom";
 import imgWoensDeal from "../assets/BK-Uploads/600_X286_PX_SLIDERS_PRODUCTS_03_b3d0b3947e.jpg";
 import imgKingDeal from "../assets/BK-Uploads/600_X286_PX_SLIDERS_PRODUCTS_033_62431b7cad.jpg";

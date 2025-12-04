@@ -6,7 +6,7 @@ import crownIcon from "./assets/myBK/mybk-crown-icon.png";
 import cardCrownIcon from "./assets/myBK/advantage-crown.png";
 import cardCoinIcon from "./assets/myBK/advantage-coin.png";
 import cardBurgerIcon from "./assets/myBK/advantage-burger.png";
-import "./css/myBK.css"
+import "./css/BKStyles.css"
 import { useLanguage } from "./i18n/LanguageContext";
 
 const MyBK = () => {

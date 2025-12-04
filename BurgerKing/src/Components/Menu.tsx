@@ -1,5 +1,5 @@
 import menuData from "../menu.ts"
-import '../css/Menu.css'
+import '../css/BKStyles.css'
 import burger from '../assets/menuFilter/burger.svg'
 import salad from '../assets/menuFilter/salad.svg'
 import drink from '../assets/menuFilter/drink.svg'
