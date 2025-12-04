@@ -1,11 +1,11 @@
 import React from "react";
-import "../css/BKStyles.css";
+import "../../css/BKStyles.css";
 import { Link } from "react-router-dom";
-import imgWoensDeal from "../assets/BK-Uploads/600_X286_PX_SLIDERS_PRODUCTS_03_b3d0b3947e.jpg";
-import imgKingDeal from "../assets/BK-Uploads/600_X286_PX_SLIDERS_PRODUCTS_033_62431b7cad.jpg";
-import imgMixNMatch8 from "../assets/BK-Uploads/600_X286_PX_SLIDERS_PRODUCTS_034_70a09d4106.jpg";
-import imgMixNMatch4 from "../assets/BK-Uploads/600_X286_PX_SLIDERS_PRODUCTS_035_fd8564a993.jpg";
-import imgDriveDeal from "../assets/BK-Uploads/600_X286_PX_SLIDERS_PRODUCTS_036_b49620.png";
+import imgWoensDeal from "../../assets/BK-Uploads/600_X286_PX_SLIDERS_PRODUCTS_03_b3d0b3947e.jpg";
+import imgKingDeal from "../../assets/BK-Uploads/600_X286_PX_SLIDERS_PRODUCTS_033_62431b7cad.jpg";
+import imgMixNMatch8 from "../../assets/BK-Uploads/600_X286_PX_SLIDERS_PRODUCTS_034_70a09d4106.jpg";
+import imgMixNMatch4 from "../../assets/BK-Uploads/600_X286_PX_SLIDERS_PRODUCTS_035_fd8564a993.jpg";
+import imgDriveDeal from "../../assets/BK-Uploads/600_X286_PX_SLIDERS_PRODUCTS_036_b49620.png";
 
 
 type Deal = {

@@ -1,12 +1,12 @@
-import menuData from "../menu.ts"
-import '../css/BKStyles.css'
-import burger from '../assets/menuFilter/burger.svg'
-import salad from '../assets/menuFilter/salad.svg'
-import drink from '../assets/menuFilter/drink.svg'
-import dessert from '../assets/menuFilter/ice-cream-cone.svg'
-import fries from '../assets/menuFilter/fries.svg'
-import sauce from '../assets/menuFilter/sauce.svg'
-import kid from '../assets/menuFilter/kid.svg'
+import menuData from "../../menu.ts"
+import '../../css/BKStyles.css'
+import burger from '../../assets/menuFilter/burger.svg'
+import salad from '../../assets/menuFilter/salad.svg'
+import drink from '../../assets/menuFilter/drink.svg'
+import dessert from '../../assets/menuFilter/ice-cream-cone.svg'
+import fries from '../../assets/menuFilter/fries.svg'
+import sauce from '../../assets/menuFilter/sauce.svg'
+import kid from '../../assets/menuFilter/kid.svg'
 import React, { useState } from "react"
 import { useNavigate } from "react-router-dom"
 

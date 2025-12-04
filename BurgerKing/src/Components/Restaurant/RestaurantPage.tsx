@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import { restaurants, type Restaurant } from "./data/restaurants";
+import { restaurants, type Restaurant } from "../../data/restaurants";
 import RestaurantMap from "./RestaurantMap";
 import RestaurantDetail from "./RestaurantDetail";
 

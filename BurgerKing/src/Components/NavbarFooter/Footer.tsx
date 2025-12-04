@@ -1,7 +1,7 @@
-import instagram from "../assets/footer/instagram.svg";
-import xCom from "../assets/footer/x-com.svg";
-import facebook from "../assets/footer/facebook.svg";
-import { useLanguage } from "../i18n/LanguageContext";
+import instagram from "../../assets/footer/instagram.svg";
+import xCom from "../../assets/footer/x-com.svg";
+import facebook from "../../assets/footer/facebook.svg";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 const Footer = () => {
   const { t, lang, setLang } = useLanguage();

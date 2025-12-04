@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
-import menuData from "../menu";
-import '../css/BKStyles.css'
+import menuData from "../../menu";
+import '../../css/BKStyles.css'
 import type React from "react";
 
 const MenuItemDetail: React.FC = () => {

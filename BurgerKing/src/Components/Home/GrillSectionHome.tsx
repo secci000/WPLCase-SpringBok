@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
-import "../css/BKStyles.css";
-import bunImg from "../assets/home/bun.png";
-import pattyImg from "../assets/home/patty.png";
+import "../../css/BKStyles.css";
+import bunImg from "../../assets/home/bun.png";
+import pattyImg from "../../assets/home/patty.png";
 import { GiHamburger } from "react-icons/gi";
 
 function GrillSection() {

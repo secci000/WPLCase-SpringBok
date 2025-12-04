@@ -1,12 +1,12 @@
 import Carousel, { CarouselItem } from "./Carousel";
 
-import SmokingMozza from "../assets/home/smoking-mozza.png";
-import Nuggets from "../assets/home/nuggets.png";
-import TexasBacon from "../assets/home/texas-bacon.png";
-import CrispyChicken from "../assets/home/crispy-chicken.png";
-import Shakes from "../assets/home/shakes.png";
-import CrispyVeggie from "../assets/home/crispy-veggie.png";
-import KingDeal from "../assets/home/kingdeal.png";
+import SmokingMozza from "../../assets/home/smoking-mozza.png";
+import Nuggets from "../../assets/home/nuggets.png";
+import TexasBacon from "../../assets/home/texas-bacon.png";
+import CrispyChicken from "../../assets/home/crispy-chicken.png";
+import Shakes from "../../assets/home/shakes.png";
+import CrispyVeggie from "../../assets/home/crispy-veggie.png";
+import KingDeal from "../../assets/home/kingdeal.png";
 
 const CarouselHomePage = () => {
   return (

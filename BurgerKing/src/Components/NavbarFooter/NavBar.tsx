@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import logoBK from "../assets/navBar/logo-bk.svg";
-import iconHamburgerMenu from "../assets/navBar/menu.svg";
+import logoBK from "../../assets/navBar/logo-bk.svg";
+import iconHamburgerMenu from "../../assets/navBar/menu.svg";
 import { NavLink } from "react-router-dom";
-import { useLanguage } from "../i18n/LanguageContext";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 const NavBar = () => {
   const {lang, setLang } = useLanguage();

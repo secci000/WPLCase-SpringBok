@@ -1,11 +1,11 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import MyBK from "./myBK";
-import Menu from "./Components/Menu.tsx";
-import NavbarFooter from "./Components/navbarFooter";
-import RestaurantPage from "./RestaurantPage";
-import HomePage from "./Components/HomePage.tsx";
-import MenuItemDetail from "./Components/MenuItemDetail.tsx";
-import DealsPage from "./Components/DealsPage";
+import MyBK from "./Components/MyBk/myBK.tsx";
+import Menu from "./Components/Menu/Menu.tsx";
+import NavbarFooter from "./Components/NavbarFooter/navbarFooter.tsx";
+import RestaurantPage from "./Components/Restaurant/RestaurantPage.tsx";
+import HomePage from "./Components/Home/HomePage.tsx";
+import MenuItemDetail from "./Components/Menu/MenuItemDetail.tsx";
+import DealsPage from "./Components/Deals/DealsPage.tsx";
 
 const RootLayout = () => {
   return (

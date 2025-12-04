@@ -1,13 +1,13 @@
-import kingdomPhone from "./assets/myBK/kingdom-phone.webp";
-import appQR from "./assets/myBK/app-qr-code.webp";
-import arrow from "./assets/myBK/arrow.webp";
-import kingdomMechanism from "./assets/myBK/kingdom-mechanism.png"
-import crownIcon from "./assets/myBK/mybk-crown-icon.png";
-import cardCrownIcon from "./assets/myBK/advantage-crown.png";
-import cardCoinIcon from "./assets/myBK/advantage-coin.png";
-import cardBurgerIcon from "./assets/myBK/advantage-burger.png";
-import "./css/BKStyles.css"
-import { useLanguage } from "./i18n/LanguageContext";
+import kingdomPhone from "../../assets/myBK/kingdom-phone.webp";
+import appQR from "../../assets/myBK/app-qr-code.webp";
+import arrow from "../../assets/myBK/arrow.webp";
+import kingdomMechanism from "../../assets/myBK/kingdom-mechanism.png"
+import crownIcon from "../../assets/myBK/mybk-crown-icon.png";
+import cardCrownIcon from "../../assets/myBK/advantage-crown.png";
+import cardCoinIcon from "../../assets/myBK/advantage-coin.png";
+import cardBurgerIcon from "../../assets/myBK/advantage-burger.png";
+import "../../css/BKStyles.css"
+import { useLanguage } from "../../i18n/LanguageContext";
 
 const MyBK = () => {
     //Language selector system

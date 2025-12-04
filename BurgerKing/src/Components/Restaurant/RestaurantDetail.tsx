@@ -2,7 +2,7 @@ import React from "react";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
 import type { LatLngExpression } from "leaflet";
 import L from "leaflet";
-import type { Restaurant } from "./data/restaurants";
+import type { Restaurant } from "../../data/restaurants";
 
 type RestaurantDetailProps = {
   restaurant: Restaurant;

@@ -1,6 +1,6 @@
-import "../css/BKStyles.css";
+import "../../css/BKStyles.css";
 import AppSectionHome from "./AppSectionHome";
-import Logo from "../assets/logo-bk.svg";
+import Logo from "../../assets/logo-bk.svg";
 import GrillSection from "./GrillSectionHome";
 import CarouselHomePage from "./CarouselHomePage";
 import HomeCategory from "./CategoriesHomePage";
