@@ -1,17 +1,21 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import MyBK from "./Components/MyBk/myBK.tsx";
-import Menu from "./Components/Menu/Menu.tsx";
-import NavbarFooter from "./Components/NavbarFooter/navbarFooter.tsx";
-import RestaurantPage from "./Components/Restaurant/RestaurantPage.tsx";
-import HomePage from "./Components/Home/HomePage.tsx";
-import MenuItemDetail from "./Components/Menu/MenuItemDetail.tsx";
-import DealsPage from "./Components/Deals/DealsPage.tsx";
+import MyBK from "./Components/MyBk/myBK";
+import Menu from "./Components/Menu/Menu";
+import NavbarFooter from "./Components/NavbarFooter/navbarFooter";
+import RestaurantPage from "./Components/Restaurant/RestaurantPage";
+import HomePage from "./Components/Home/HomePage";
+import MenuItemDetail from "./Components/Menu/MenuItemDetail";
+import DealsPage from "./Components/Deals/DealsPage";
+import ScrollToTop from "./Components/ScrollToTop";
 
 const RootLayout = () => {
   return (
-    <NavbarFooter>
-      <Outlet />
-    </NavbarFooter>
+    <>
+      <ScrollToTop />   {/* <== hier plaatsen, BINNEN de router-context */}
+      <NavbarFooter>
+        <Outlet />
+      </NavbarFooter>
+    </>
   );
 };
 
